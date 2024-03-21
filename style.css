@@ -1,4 +1,5 @@
 *{
+    font-family: 'Gill Sans MT', san-serif;
     margin: 0;
     padding : 0;
     box-sizing: border-box;
@@ -106,7 +107,7 @@ button:hover{
 
 @media (min-aspect-ratio: 16/9){
     .backgroundvid{
-        width: 110%;
+        width: 120%;
         height: auto;
     }
 }
@@ -116,4 +117,85 @@ button:hover{
         width: auto;
         height: 100%;
     }
+}
+
+.hero h2{
+    color:#fff;
+    font-size: 32px;
+    padding: 50px;
+    position: absolute;
+    top: 55px;
+}
+
+.price-row{
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    position: absolute;
+    bottom: 30px;
+
+}
+.price-column{
+    background-image: linear-gradient(rgba(0, 150, 135, 0.486), rgba(0, 150, 135, 0.801));
+    padding: 2% 10%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.price-column p{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+
+.price-column h3{
+    font-size: 38px;
+    margin: 20px 0 25px;
+    font-weight: 500;
+}
+
+.price-column ul{
+    text-align: left;
+    margin: 20px 0;
+    list-style: none;
+}
+.price-column ul li{
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.price-column ul li::before{
+    content: '\2022';
+    color: #ffdac1;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.price-column button{
+    position: static;
+    bottom: 10px;
+}
+.price-column button{
+    width: 100%;
+    padding: 10px 2px;
+    text-align: center;
+    margin: 14px 0;
+    margin-top: 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 13px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    transition: background 0.5s;
+}
+
+.price-column button:hover{
+    background: #fff;
+    color:#009688;
 }
