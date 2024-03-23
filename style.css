@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/*Home Page Config*/
 .hero{
     width: 100%;
     height: 100vh;
@@ -76,9 +77,10 @@ nav ul li a{
 
 }
 
-button{
+.button a{
+    text-decoration: none;
     width: 200px;
-    padding: 15px 0;
+    padding: 10px 60px;
     text-align: center;
     margin: 20px 10px;
     border-radius: 25px;
@@ -92,7 +94,7 @@ button{
 }
 
 
-button:hover{
+.button:hover a{
     transition: 0.5s;
     border: none;
     background: #009688;
@@ -119,6 +121,11 @@ button:hover{
     }
 }
 
+
+
+
+
+/*Pricing Page Config*/
 .hero h2{
     color:#fff;
     font-size: 32px;
@@ -199,3 +206,72 @@ button:hover{
     background: #fff;
     color:#009688;
 }
+
+
+
+
+
+/*About Us Page Config*/
+.hero-about{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.603));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-about{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform: scale(1.5);
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: aquamarine;
+}
+
+.about-content p{
+    text-align: justify;
+    font: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.backgroundpic{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;  
+}
+
